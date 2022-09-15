@@ -16,4 +16,4 @@ if [[ ! $cs_args == *"-c "* ]]; then
 fi
 
 files="${*:idx}"
-java -jar /opt/checkstyle.jar $cs_args $files
+java -jar /usr/bin/checkstyle.jar $cs_args $files

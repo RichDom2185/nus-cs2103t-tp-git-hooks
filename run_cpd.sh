@@ -16,4 +16,4 @@ if [[ ! $cpd_args == *"--minimum-tokens "* ]]; then
 fi
 
 files="${*:idx}"
-/opt/pmd/bin/run.sh cpd --format text --language java $cpd_args --files $files
+/usr/bin/pmd/bin/run.sh cpd --format text --language java $cpd_args --files $files
