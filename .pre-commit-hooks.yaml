@@ -21,6 +21,14 @@
   entry: /bin/bash /usr/bin/check-eof-newline.sh
   require_serial: true
 
+- id: check-trailing-whitespace
+  name: check-trailing-whitespace
+  description: Checks for trailing whitespace
+  language: docker
+  types: [text]
+  entry: /bin/bash /usr/bin/check-trailing-whitespace.sh
+  require_serial: true
+
 - id: checkstyle
   name: checkstyle
   description: "Runs the Checkstyle static code analysis tool."

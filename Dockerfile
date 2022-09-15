@@ -18,4 +18,5 @@ RUN cd /usr/bin \
 COPY run_cpd.sh /usr/bin
 COPY check-no-tabs.sh /usr/bin
 COPY check-eof-newline.sh /usr/bin
+COPY check-trailing-whitespace.sh /usr/bin
 COPY run_checkstyle.sh /usr/bin
