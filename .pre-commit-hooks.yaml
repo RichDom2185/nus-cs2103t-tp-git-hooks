@@ -1,6 +1,6 @@
 - id: cpd
   name: cpd
-  description: "Runs the Copy/Paste Detector (CPD)."
+  description: Checks for copy-pasting.
   language: docker
   entry: /bin/bash /usr/bin/run_cpd.sh
   files: \.java$
@@ -8,6 +8,7 @@
 
 - id: check-no-tabs
   name: check-no-tabs
+  description: Checks that no horizontal tabs are used.
   language: docker
   types: [text]
   entry: /bin/bash /usr/bin/check-no-tabs.sh
@@ -23,7 +24,7 @@
 
 - id: check-trailing-whitespace
   name: check-trailing-whitespace
-  description: Checks for trailing whitespace
+  description: Checks for trailing whitespace.
   language: docker
   types: [text]
   entry: /bin/bash /usr/bin/check-trailing-whitespace.sh
@@ -31,7 +32,7 @@
 
 - id: checkstyle
   name: checkstyle
-  description: "Runs the Checkstyle static code analysis tool."
+  description: Checks for code style violations.
   language: docker
   entry: /bin/bash /usr/bin/run_checkstyle.sh
   files: \.java$
