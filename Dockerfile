@@ -16,4 +16,5 @@ RUN cd /usr/bin \
       && wget -nc -O checkstyle.jar ${CS_URL}
 
 COPY run_cpd.sh /usr/bin
+COPY check-eof-newline.sh /usr/bin
 COPY run_checkstyle.sh /usr/bin
