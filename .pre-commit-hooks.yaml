@@ -13,6 +13,7 @@
   types: [text]
   entry: /bin/bash /usr/bin/check-no-tabs.sh
   require_serial: true
+  fail_fast: true
 
 - id: check-eof-newline
   name: check-eof-newline
