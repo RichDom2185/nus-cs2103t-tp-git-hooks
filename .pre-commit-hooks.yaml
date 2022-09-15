@@ -6,6 +6,13 @@
   files: \.java$
   require_serial: true
 
+- id: check-no-tabs
+  name: check-no-tabs
+  language: docker
+  types: [text]
+  entry: /bin/bash /usr/bin/check-no-tabs.sh
+  require_serial: true
+
 - id: check-eof-newline
   name: check-eof-newline
   description: Checks that all text files end with a newline.
